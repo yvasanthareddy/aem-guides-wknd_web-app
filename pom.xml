@@ -25,6 +25,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <!-- SonarQube Server Details -->
+    <sonar.host.url>https://172.105.37.112:9000/</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin123</sonar.password>
   </properties>
 
   <dependencies>
@@ -35,6 +39,20 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <!-- Distribution Management -->
+  	<distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <name>WKND Maven Web Application - Releases</name>
+	      <url>http://45.79.121.132:8081/repository/WKND_Maven_Web_Application-Releases/</url>
+	    </repository> 
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>WKND Maven Web Application - Snapshot</name>
+	      <url>http://45.79.121.132:8081/repository/WKND_Maven_Web_Application-Snapshots/</url>
+	    </snapshotRepository> 
+	</distributionManagement>
 
   <build>
     <finalName>aem-guides-wknd</finalName>
