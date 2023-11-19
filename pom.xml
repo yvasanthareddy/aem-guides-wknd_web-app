@@ -26,7 +26,7 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <!-- SonarQube Server Details -->
-    <sonar.host.url>http://172.105.37.112:9000/</sonar.host.url>
+    <sonar.host.url>http://localhost:9000/</sonar.host.url>
     <sonar.login>admin</sonar.login>
     <sonar.password>admin123</sonar.password>
   </properties>
@@ -50,7 +50,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>WKND Maven Web Application - Snapshot</name>
-	      <url>http://45.79.121.132:8081/repository/WKND_Maven_Web_Application-Snapshots/</url>
+	      <url>http://45.79.125.39:8081/repository/WKND-MavenWebApplication-Snapshot/</url>
 	    </snapshotRepository> 
 	</distributionManagement>
 
